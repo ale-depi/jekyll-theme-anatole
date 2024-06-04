@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  jekyll:
+    build: .
+    image: jekyll-test
+    container_name: jekyll-container
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./my-jekyll-site:/home/juser/my-jekyll-site
+    working_dir: /home/juser/my-jekyll-site
+    command: jekyll serve --host 0.0.0.0
