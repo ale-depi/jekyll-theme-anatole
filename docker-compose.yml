@@ -1,10 +1,29 @@
 services:
   jekyll-server:
-    build: .
+    build: 
+      context: jekyll
+      dockerfile: Dockerfile
     image: "anatole:dev"
     container_name: anatole-container
     ports:
       - "4000:4000"
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    stdin_open: true
+    tty: true
+    command: "/bin/ash"
+  hugo:
+    build: 
+      context: hugo
+      dockerfile: Dockerfile
+    image: "hugo:dev"  
+    container_name: hugo_container
+    environment:
+      - HUGO_WATCH=true
+      - HUGO_ENV=development
+    ports:
+      - "1313:1313"
     volumes:
       - .:/usr/src/app
     working_dir: /usr/src/app
