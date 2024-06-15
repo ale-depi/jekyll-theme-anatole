@@ -1,0 +1,15 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[yaml]": {
+        "prettier.tabWidth": 2
+    },
+    "[html]": {
+        "prettier.tabWidth": 4
+    },
+    "[css]": {
+        "prettier.tabWidth": 2
+    },
+    "[scss]": {
+        "prettier.tabWidth": 2
+    }
+}

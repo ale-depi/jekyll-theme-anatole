@@ -1,0 +1,23 @@
+<div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+        <div class="title">
+            <img src="{{ site.parameters.profile_picture | absolute_url }}" alt="profile picture" />
+            <h3 title=""><a href="/">{{ site.parameters.title }}</a></h3>
+            <div class="description">
+                <p>{{ site.parameters.description }}</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        {% for social_icon in site.social_icons %}
+        <li>
+            <a href="{{ social_icon.url }}" rel="me" aria-label="{{ social_icon.title }}">
+                <i class="fa fa-2x {{ social_icon.icon }}" aria-hidden="true"></i>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; {{ site.parameters.author }} {{ "now" | date: "%Y" }}</div>
+    </div>
+</div>

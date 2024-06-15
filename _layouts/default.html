@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}" data-theme="{{ site.display_mode }}">
+    {% include head.html %}
+
+    <body>
+        {% include sidebar.html %}
+        <div class="main">
+            {% include navbar.html %}
+            <div class="autopagerize_page_element">
+                <div class="content">{{ content }}</div>
+            </div>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>

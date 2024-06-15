@@ -1,0 +1,22 @@
+<div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        {% for entry in site.menu %}
+        {% assign active = (page.url == entry.url) %}
+        <li>
+            <a {% if active %}class="current"{% endif %} href="{{ entry.url }}" {% if (entry.url | slice: 0, 3) == "http" %}target="_blank" rel="noopener noreferrer" {% endif %} title="{{ entry.title }}">
+            {{ entry.name }}
+            </a>
+        </li>
+        {% endfor %}
+        <li class="theme-switch-item">
+            <a class="theme-switch" title="Switch Theme">
+                <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>

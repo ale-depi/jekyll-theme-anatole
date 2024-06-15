@@ -6,8 +6,8 @@ services:
     ports:
       - "4000:4000"
     volumes:
-      - .:/usr/src/app
-    working_dir: /usr/src/app
+      - .:/home/juser/jekyll-theme-anatole
+    working_dir: /home/juser/jekyll-theme-anatole
     stdin_open: true
     tty: true
     command: "/bin/ash"
