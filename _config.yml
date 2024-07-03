@@ -49,14 +49,21 @@ menu:
     url: /about
 
 social_icons:
-  linkedin:
-    title: LinkedIn
+  - title: LinkedIn
     icon: fa-linkedin
-    url: https://en.linkedin.com
-  github:
-    title: GitHub
+    url: https://en.linkedin.com/
+  - title: GitHub
     icon: fa-github
-    url: https://github.com/ale-depi/jekyll-theme-anatole
+    url: https://github.com/ale-depi/jekyll-theme-anatole/
+  - title: Instagram
+    icon: fa-instagram
+    url: https://www.instagram.com/
+  - title: e-mail
+    icon: fa-envelope
+    url: mailto:ale.depi@live.it
+
+sass:
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
