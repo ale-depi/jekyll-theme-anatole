@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Website of Rubber Duck
-email: rubber-duck@desktop.com
+title: Website of Rubberr Duck
+email: rubberr-duck@desktop.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 parameters:
-  title: I'm Ruberr Duck
-  author: Rubber Duck
+  title: I'm Rubberr Duck
+  author: Rubberr Duck
   description: >-
     Call me Err Duck
   profile_picture: /assets/images/profile_picture.svg
@@ -42,11 +42,11 @@ menu:
   - name: Posts
     identifier: posts
     weight: 200
-    url: /posts
+    url: /posts/
   - name: About
     identifier: about
     weight: 300
-    url: /about
+    url: /about/
 
 social_icons:
   - title: LinkedIn
