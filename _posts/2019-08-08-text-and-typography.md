@@ -1,9 +1,11 @@
 ---
-title: Text and Typography
-description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 author: Rubber Duck
-date: 2019-08-08 11:33:00 +0800
-layout: post
+description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
+is_post: true
+layout: page
+published: 2019-08-08 11:33:00 +0800
+title: Text and Typography
+update: 2019-08-08 11:33:00 +0800
 ---
 
 ## Headings
@@ -41,12 +43,12 @@ This is a common code snippet, without syntax highlight and line number.
 
 ### Specific Language
 
-```bash
+{% highlight bash %}
 if [ $? -ne 0 ]; then
-  echo "The command was not successful.";
-  #do the needful / exit
+    echo "The command was not successful.";
+    #do the needful / exit
 fi;
-```
+{% endhighlight %}
 
 ## Lists
 

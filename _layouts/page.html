@@ -2,4 +2,27 @@
 layout: default
 ---
 
-{{ content }}
+<div class="post animated fadeInDown">
+    <div class="post-content">
+        <div class="post-title">
+            <h3>{{ page.title }}</h3>
+            {% if page.is_post == true %}
+            <div class="info">
+                <i class="fa fa-sun-o"></i>
+                <span class="date">{{ page.published | date: "%a, %b %d, %Y" }}</span>
+            </div>
+            {% endif %}
+        </div>
+        {{ content }}
+    </div>
+    <div class="post-footer">
+        <div class="info">
+            {% if page.categories %}
+            {% include taxonomy/categories.html %}
+            {% endif %}
+            {% if page.tags %}
+            {% include taxonomy/tags.html %}
+            {% endif %}
+        </div>
+    </div>
+</div>

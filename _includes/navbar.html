@@ -6,9 +6,8 @@
     </a>
     <ul class="nav" id="navMenu">
         {% for entry in site.menu %}
-        {% assign active = (page.url == entry.url) %}
         <li>
-            <a {% if active %}class="current"{% endif %} href="{{ entry.url }}" {% if (entry.url | slice: 0, 3) == "http" %}target="_blank" rel="noopener noreferrer" {% endif %} title="{{ entry.title }}">
+            <a {% if page.url == entry.url %}class="current"{% endif %} href="{{ entry.url }}" title="{{ entry.title }}">
             {{ entry.name }}
             </a>
         </li>
