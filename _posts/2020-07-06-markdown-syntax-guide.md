@@ -1,11 +1,11 @@
 ---
 author: Rubber Duck
-categories: ["themes", "syntax"]
+categories: themes syntax
 description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 is_post: true
 layout: page
-published: 2020-07-06 11:33:00 +0800
-tags: ["markdown", "css", "html", "themes"]
+published: 2018-07-06 11:33:00 +0800
+tags: markdown css html themes
 title: Markdown Syntax Guide
 update: 2020-07-06 11:33:00 +0800
 ---

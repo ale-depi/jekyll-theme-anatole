@@ -3,7 +3,7 @@ author: Rubber Duck
 description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 is_post: true
 layout: page
-published: 2019-08-08 11:33:00 +0800
+published: 2017-08-08 11:33:00 +0800
 title: Text and Typography
 update: 2019-08-08 11:33:00 +0800
 ---

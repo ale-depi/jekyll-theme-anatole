@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="archive animated fadeInDown">
+    <ul class="list-with-title">
+        {% assign all_years_in_tags = '' %}
+
+        {% for tag in site.tags %}
+            {% for post in tag[1] %}
+                {% assign current_year = post.update | date: "%Y" %}
+                {% assign all_years_in_tags = all_years_in_tags | append: ' ' | append: current_year %}
+            {% endfor %}
+        {% endfor %}
+
+        {% assign years = all_years_in_tags | split: ' ' | uniq | sort %}
+
+        {% for current_year in years %}
+            <div class="listing-title">{{ current_year }}</div>
+            {% for tag in site.tags %}
+                {% for post in tag[1] %}
+                    {% assign post_update_year = post.update | date: "%Y" %}
+                    {% if post_update_year == current_year %}
+                        <ul class="listing">
+                            <div class="listing-item">
+                                <div class="listing-post">
+                                    <a href="{{ tag[0] | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}" title="{{ tag[0] }}">{{ tag[0] | capitalize }}</a>
+                                    <div class="post-time"><span class="date">{{ post.published | date: "%b %d" }}</span></div>
+                                </div>
+                            </div>
+                        </ul>
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+    </ul>
+</div>

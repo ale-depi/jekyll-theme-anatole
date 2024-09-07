@@ -65,6 +65,20 @@ social_icons:
 sass:
   style: compressed
 
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:title/
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
