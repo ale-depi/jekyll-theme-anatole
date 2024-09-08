@@ -33,6 +33,7 @@ parameters:
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-archives
 
 menu:
   - name: Home
@@ -90,8 +91,9 @@ jekyll-archives:
 exclude:
   - docker-compose.yml
   - Dockerfile
-  - jekyll-theme-anatole.gemspec 
+  - jekyll-theme-anatole*
   - README.md
+  - LICENSE
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
