@@ -1,5 +1,5 @@
 <span class="separator">
     {% for category in page.categories %}
-    <a class="category" href="{{ "/categories/" | append: category }}">{{ category }}</a>
+        <a class="category" href="{{ "/categories/" | append: category | relative_url }}">{{ category }}</a>
     {% endfor %}
 </span>

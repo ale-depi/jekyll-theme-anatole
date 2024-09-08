@@ -14,7 +14,7 @@ layout: default
         <ul class="listing">
             <div class="listing-item">
                 <div class="listing-post">
-                    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                    <a href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a>
                     <div class="post-time"><span class="date">{{ post.published | date: "%b %d" }}</span></div>
                 </div>
             </div>

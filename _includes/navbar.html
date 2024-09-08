@@ -7,7 +7,7 @@
     <ul class="nav" id="navMenu">
         {% for entry in site.menu %}
         <li>
-            <a {% if page.url == entry.url %}class="current"{% endif %} href="{{ entry.url }}" title="{{ entry.title }}">
+            <a {% if page.url == entry.url %}class="current"{% endif %} href="{{ entry.url | relative_url }}" title="{{ entry.title }}">
             {{ entry.name }}
             </a>
         </li>
