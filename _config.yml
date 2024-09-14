@@ -20,8 +20,10 @@
 
 title: Website of Rubberr Duck
 email: rubberr-duck@desktop.com
-baseurl: "/jekyll-theme-anatole" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/jekyll-theme-anatole"
+# baseurl is the subpath of your site, e.g. /blog
+url: ""
+# url is the base hostname & protocol for your site, e.g. http://example.com
 
 parameters:
   title: I'm Rubberr Duck
@@ -30,10 +32,28 @@ parameters:
     Call me Err Duck
   profile_picture: /assets/images/profile_picture.svg
 
-# Build settings
 plugins:
-  - jekyll-feed
   - jekyll-archives
+  - jekyll-feed
+  - jekyll-paginate
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+# jekyll-paginate
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:title/
 
 menu:
   - name: Home
@@ -49,6 +69,9 @@ menu:
     weight: 300
     url: /about/
 
+sass:
+  style: compressed
+
 social_icons:
   - title: LinkedIn
     icon: fa-linkedin
@@ -62,23 +85,6 @@ social_icons:
   - title: e-mail
     icon: fa-envelope
     url: mailto:ale.depi@live.it
-
-sass:
-  style: compressed
-
-collections:
-  posts:
-    output: true
-    permalink: /:collection/:title/
-
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

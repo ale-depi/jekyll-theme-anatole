@@ -1,12 +1,16 @@
 ---
 author: Rubber Duck
+categories: syntax
 description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 is_post: true
 layout: page
 published: 2017-08-08 11:33:00 +0800
+tags: markdown
 title: Text and Typography
 update: 2019-08-08 11:33:00 +0800
 ---
+
+Another example of Markdown rendering.
 
 ## Headings
 
