@@ -25,7 +25,7 @@ layout: default
                             <div class="listing-item">
                                 <div class="listing-post">
                                     <a href="{{ tag[0] | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}" title="{{ tag[0] }}">{{ tag[0] | capitalize }}</a>
-                                    <div class="post-time"><span class="date">{{ post.published | date: "%b %d" }}</span></div>
+                                    <div class="post-time"><span class="date">{{ post.date | date: "%b %d" }}</span></div>
                                 </div>
                             </div>
                         </ul>

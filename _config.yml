@@ -86,6 +86,10 @@ social_icons:
     icon: fa-envelope
     url: mailto:ale.depi@live.it
 
+math:
+  enable: false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+  engine: katex  # options: "katex", "mathjax". default is "katex".
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

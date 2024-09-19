@@ -1,10 +1,10 @@
 ---
 author: Hugo Authors
+date: 2019-03-09
 description: Lorem Ipsum Dolor Si Amet
 excerpt_separator: <!--more-->
 is_post: true
 layout: page
-published: 2019-03-09 12:03:00 +0800
 tags: markdown text
 title: Placeholder Text
 ---

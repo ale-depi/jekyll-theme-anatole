@@ -9,7 +9,7 @@ layout: default
             {% if page.is_post == true %}
             <div class="info">
                 <i class="fa fa-sun-o"></i>
-                <span class="date">{{ page.published | date: "%a, %b %d, %Y" }}</span>
+                <span class="date">{{ page.date | date: "%a, %b %d, %Y" }}</span>
             </div>
             {% endif %}
         </div>
