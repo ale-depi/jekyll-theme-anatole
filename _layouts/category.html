@@ -6,9 +6,9 @@ layout: default
     <ul class="list-with-title">
         {% assign current_year = 0 %}
         {% for post in page.posts %}
-            {% assign post_update_year = post.update | date: "%Y" %}
-            {% if current_year != post_update_year %}
-                {% assign current_year = post.update | date: "%Y" %}
+            {% assign post_date_year = post.date | date: "%Y" %}
+            {% if current_year != post_date_year %}
+                {% assign current_year = post.date | date: "%Y" %}
                 <div class="listing-title">{{ current_year }}</div>
             {% endif %}
             <ul class="listing">
