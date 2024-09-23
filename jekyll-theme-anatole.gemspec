@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-anatole"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.2"
   spec.authors       = ["Alessandro De Piccoli", "Marco Garlet"]
   spec.email         = ["ale.depi@live.it", "marcogarlet@gmail.com"]
 
@@ -12,5 +12,9 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
 
+  spec.required_ruby_version = ">= 3.0"
+
   spec.add_runtime_dependency "jekyll", "~> 4.3"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.12"
+  spec.add_runtime_dependency "jekyll-archives", "~> 2.2"
 end

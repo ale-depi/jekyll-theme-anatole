@@ -1,13 +1,12 @@
 ---
 author: Rubber Duck
-categories: ["themes", "syntax"]
+categories: themes syntax
+date: 2019-03-11
 description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 is_post: true
 layout: page
-published: 2020-07-06 11:33:00 +0800
-tags: ["markdown", "css", "html", "themes"]
+tags: markdown css html themes
 title: Markdown Syntax Guide
-update: 2020-07-06 11:33:00 +0800
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Jekyll content files, also it shows whether basic HTML elements are decorated with CSS in a Jekyll theme.

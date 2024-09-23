@@ -5,13 +5,12 @@
         <span aria-hidden="true"></span>
     </a>
     <ul class="nav" id="navMenu">
-        {% assign current_url = page.url %}
-        {% for item in site.menu %}
-        {% assign active = false %}
-        {% if current_url == item.url %}
-        {% assign active = true %}
-        {% endif %}
-        <li><a href="{{ item.url }}" class="{% if active %}current{% endif %}" {% if item.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %} title="{{ item.title }}">{{ item.name }}</a></li>
+        {% for entry in site.menu %}
+        <li>
+            <a {% if page.url == entry.url %}class="current"{% endif %} href="{{ entry.url | relative_url }}" title="{{ entry.title }}">
+            {{ entry.name }}
+            </a>
+        </li>
         {% endfor %}
         <li class="theme-switch-item">
             <a class="theme-switch" title="Switch Theme">

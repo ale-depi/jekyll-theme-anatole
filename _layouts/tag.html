@@ -5,7 +5,7 @@ layout: default
 <div class="archive animated fadeInDown">
     <ul class="list-with-title">
         {% assign current_year = 0 %}
-        {% for post in site.posts %}
+        {% for post in page.posts %}
         {% assign post_date_year = post.date | date: "%Y" %}
         {% if current_year != post_date_year %}
         {% assign current_year = post.date | date: "%Y" %}

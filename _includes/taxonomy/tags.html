@@ -1,5 +1,5 @@
 <span class="separator">
     {% for tag in page.tags %}
-    <a class="tag" href="{{ "/tags/" | append: tag }}">{{ tag }}</a>
+        <a class="tag" href="{{ "/tags/" | append: tag | relative_url }}">{{ tag }}</a>
     {% endfor %}
 </span>
