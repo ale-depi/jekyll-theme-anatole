@@ -39,6 +39,8 @@ plugins:
   - jekyll-archives
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-time-to-read
+  - jemoji
 
 jekyll-archives:
   enabled: [categories, tags]

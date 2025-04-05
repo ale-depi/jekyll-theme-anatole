@@ -1,7 +1,7 @@
 ---
 author: Rubber Duck
 categories: syntax
-date: 2018-08-08
+date: 2017-08-08
 description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 is_post: true
 layout: page

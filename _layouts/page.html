@@ -10,6 +10,8 @@ layout: default
             <div class="info">
                 <i class="fa fa-sun-o"></i>
                 <span class="date">{{ page.date | date: "%a, %b %d, %Y" }}</span>
+                <i class="fa fa-clock-o"></i>
+                <span class="reading-time">{{ content | reading_time_as_i }}</span>
             </div>
             {% endif %}
         </div>
