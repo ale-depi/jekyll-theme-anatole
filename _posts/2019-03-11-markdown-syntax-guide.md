@@ -80,16 +80,16 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
 #### Code block indented with four spaces
 
 ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Example HTML5 Document</title>
-    </head>
-    <body>
-        <p>Test</p>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example HTML5 Document</title>
+</head>
+<body>
+    <p>Test</p>
+</body>
+</html>
 ```
 
 #### Code block with Jekyll's internal highlight shortcode

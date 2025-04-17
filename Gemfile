@@ -18,6 +18,8 @@ group :jekyll_plugins do
   gem "jekyll-paginate", ">= 1.1"
   gem "jemoji", ">= 0.13.0"
   gem "jekyll-time-to-read", ">= 0.1.2"
+  gem "jekyll-spaceship"
+  gem "jekyll-twitter-plugin"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

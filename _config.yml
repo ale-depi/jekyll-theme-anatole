@@ -39,7 +39,9 @@ plugins:
   - jekyll-archives
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-spaceship
   - jekyll-time-to-read
+  - jekyll-twitter-plugin
   - jemoji
 
 jekyll-archives:
